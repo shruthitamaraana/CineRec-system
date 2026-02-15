@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineRec | AI Movie Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">CineRec</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="shows.html">Shows</a>
+            <a href="events.html">Events</a>
+            <a href="my_list.html">My List</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Sign In</a>
+            <a href="signup.html" class="btn-signup btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg-animation">
+            <div class="poster-track">
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Dark Knight">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg" alt="Inception">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="Matrix">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gajva2L0rIGDWE4Sy1NJjDOgI7k.jpg" alt="Blade Runner">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Fight Club">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction">
+                </div>
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Dark Knight">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg" alt="Inception">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="Matrix">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gajva2L0rIGDWE4Sy1NJjDOgI7k.jpg" alt="Blade Runner">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Fight Club">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction">
+                </div>
+            </div>
+            <div class="poster-track reverse-track">
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Infinity War">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvq6.jpg" alt="Gladiator">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg" alt="Spider-Man">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="LotR">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg" alt="LotR 2">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Batman Begins">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindlers List">
+                </div>
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Infinity War">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvq6.jpg" alt="Gladiator">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg" alt="Spider-Man">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="LotR">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg" alt="LotR 2">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Batman Begins">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindlers List">
+                </div>
+            </div>
+             <div class="poster-track">
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Dark Knight">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg" alt="Inception">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="Matrix">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gajva2L0rIGDWE4Sy1NJjDOgI7k.jpg" alt="Blade Runner">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Fight Club">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction">
+                </div>
+                <div class="poster-strip">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Dark Knight">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg" alt="Inception">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="Matrix">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/gajva2L0rIGDWE4Sy1NJjDOgI7k.jpg" alt="Blade Runner">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Fight Club">
+                    <img class="bg-poster" src="https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction">
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Discover Your Next Favorite Movie</h1>
+            <p>Powered by an advanced Hybrid AI engine, combining deep content analysis and collaborative filtering to find exactly what you'll love.</p>
+            <p style="color: var(--primary-accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 2rem;">Just enter a movie you already love, and let our algorithm do the rest.</p>
+            
+            <form id="searchForm" class="search-container">
+                <input type="text" id="movieInput" class="search-input" placeholder="E.g. The Matrix, Inception, Batman..." required>
+                <button type="submit" class="btn" id="submitBtn">Recommend</button>
+            </form>
+            <div id="loading">🧠 AI is analyzing the cinematic multiverse...</div>
+            <div id="error-msg" style="color: #ff4444; margin-top: 1rem; display: none;"></div>
+        </div>
+    </header>
+
+    <main class="landing-main">
+        
+        <section class="info-section">
+            <div class="section-header">
+                <h2>How CineRec Works</h2>
+                <p>A peek under the hood of our Hybrid Recommendation Engine.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <h3>1. Content Analysis</h3>
+                    <p>We use TF-IDF vectors and cosine similarity to deeply analyze movie metadata, genres, and plot descriptions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>2. Collaborative Filtering</h3>
+                    <p>Our algorithm looks at complex user rating matrices to find patterns among audiences with similar tastes to yours.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3>3. Hybrid Scoring</h3>
+                    <p>We merge both models, intelligently weighting the scores to eliminate the "cold start" problem and deliver pinpoint accuracy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section dark-bg">
+            <div class="split-layout">
+                <div class="split-text">
+                    <h2>Why We Created CineRec</h2>
+                    <p>We've all been there: spending 45 minutes scrolling through streaming platforms, overwhelmed by choices, only to end up re-watching a show from 10 years ago. </p>
+                    <p>Existing algorithms often trap you in an "echo chamber" of the same blockbusters. We built CineRec to break that cycle. By implementing a hybrid architecture, our goal is to help users discover hidden gems and expand their cinematic horizons without the endless scrolling fatigue.</p>
+                </div>
+                <div class="split-visual">
+                    <div class="abstract-shape"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">CineRec</div>
+            <p>An AI-powered hybrid movie recommendation engine.</p>
+            <div class="footer-links">
+                <a href="#">GitHub Repository</a>
+                <a href="#">Project Documentation</a>
+                <a href="#">API Reference</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CineRec | Built with Flask & Vanilla JS
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

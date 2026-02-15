@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List | CineRec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">CineRec</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="shows.html">Shows</a>
+            <a href="events.html">Events</a>
+            <a href="my_list.html" style="color: var(--text-main); font-weight: 600;">My List</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Sign In</a>
+            <a href="signup.html" class="btn-signup btn">Sign Up</a>
+        </div>
+    </nav>
+    <main>
+        <div style="margin-bottom: 3rem;">
+            <h2 class="page-header" style="margin-bottom: 0;">My Watchlist</h2>
+            <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 1.1rem;">Movies and shows you've saved for later.</p>
+        </div>
+        
+        <div class="movie-grid" id="my-list-grid" style="display: none;"></div>
+        
+        <div class="empty-state" id="empty-state">
+            <p>You haven't saved any movies to your list yet.</p>
+            <p style="margin-top: 1rem;"><a href="index.html" style="color: var(--primary-accent); text-decoration: none;">Go find some recommendations</a>.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer" style="margin-top: auto;">
+        <div class="footer-content">
+            <div class="footer-brand">CineRec</div>
+            <p>An AI-powered hybrid movie recommendation engine.</p>
+            <div class="footer-links">
+                <a href="#">GitHub Repository</a>
+                <a href="#">Project Documentation</a>
+                <a href="#">API Reference</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CineRec | Built with Flask & Vanilla JS
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

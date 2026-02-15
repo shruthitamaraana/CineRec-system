@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | CineRec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="brand">CineRec</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="shows.html">Shows</a>
+            <a href="events.html">Events</a>
+            <a href="my_list.html">My List</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Sign In</a>
+            <a href="signup.html" class="btn-signup btn">Sign Up</a>
+        </div>
+    </nav>
+    <main>
+        <div class="results-header" id="header-container">
+            <h2>Recommendations for <span class="query-highlight" id="query-display">...</span></h2>
+        </div>
+        <div class="movie-grid" id="movie-grid"></div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>

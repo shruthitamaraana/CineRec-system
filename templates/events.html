@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Premieres | CineRec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">CineRec</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="shows.html">Shows</a>
+            <a href="events.html" style="color: var(--text-main); font-weight: 600;">Events</a>
+            <a href="my_list.html">My List</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Sign In</a>
+            <a href="signup.html" class="btn-signup btn">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="browse-header-container">
+            <h2 class="page-header" style="margin-bottom: 0;">Upcoming Premieres</h2>
+            
+            <select class="genre-filter">
+                <option value="all">All Upcoming</option>
+                <option value="this_week">This Week</option>
+                <option value="next_month">Next Month</option>
+            </select>
+        </div>
+
+        <div class="movie-grid" id="browse-events-grid">
+            </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">CineRec</div>
+            <p>An AI-powered hybrid movie recommendation engine.</p>
+            <div class="footer-links">
+                <a href="#">GitHub Repository</a>
+                <a href="#">Project Documentation</a>
+                <a href="#">API Reference</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CineRec | Built with Flask & Vanilla JS
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

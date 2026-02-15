@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail | CineRec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">CineRec</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="shows.html">Shows</a>
+            <a href="events.html">Events</a>
+            <a href="my_list.html">My List</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Sign In</a>
+            <a href="signup.html" class="btn-signup btn">Sign Up</a>
+        </div>
+    </nav>
+    <main class="detail-layout">
+        <div class="poster-placeholder" id="detail-poster">
+            <span>Loading Poster...</span>
+        </div>
+        <div class="detail-content">
+            <h1 id="detail-title" style="margin-bottom: 0.5rem;">Loading...</h1>
+            <p id="detail-meta" style="color: var(--primary-accent); font-weight: 600; margin-bottom: 1.5rem;"></p>
+            <p id="detail-description">Fetching data from the cinematic database...</p>
+            
+            <div class="action-buttons" style="display: flex; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap;">
+                
+                <a href="#" id="watchTrailerBtn" class="btn" style="background: #e52d27; display: none; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    ▶ Watch Trailer
+                </a>
+
+                <a href="#" id="watchMovieBtn" class="btn" style="background: #0078ff; display: none; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    🍿 Stream Now
+                </a>
+
+                <button class="btn" id="addToListBtn" style="background: #333;">+ Add to My List</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer" style="margin-top: auto;">
+        <div class="footer-content">
+            <div class="footer-brand">CineRec</div>
+            <p>An AI-powered hybrid movie recommendation engine.</p>
+            <div class="footer-links">
+                <a href="#">GitHub Repository</a>
+                <a href="#">Project Documentation</a>
+                <a href="#">API Reference</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CineRec | Built with Flask & Vanilla JS
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
