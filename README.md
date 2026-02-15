@@ -51,7 +51,7 @@ Want to run CineRec on your own machine? Follow these steps:
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/CineRec.git](https://github.com/YOUR_USERNAME/CineRec.git)
+git clone [https://github.com/shruthitamaraana/CineRec-system](https://github.com/shruthitamaraana/CineRec-system)
 cd CineRec
 ```
 2. Create and activate a virtual environment
